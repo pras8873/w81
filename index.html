@@ -7,7 +7,7 @@
     <meta name="author" content="21f2000973@ds.study.iitm.ac.in">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/corporate.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
 </head>
 <body>
@@ -17,11 +17,11 @@
 
         <section>
             <h1>Q3 Financial Report</h1>
-            <h3>Quarterly Earnings Review</h3>
             <p>Presented by Technical Consulting Team</p>
-            <p style="font-weight: bold; color: #42affa;">21f2000973@ds.study.iitm.ac.in</p>
+            <p style="color: #42affa;">21f2000973@ds.study.iitm.ac.in</p>
+            
             <aside class="notes">
-                Welcome everyone. Today we will review the Q3 performance.
+                Introduction slide. Welcome stakeholders and introduce the email contact 21f2000973@ds.study.iitm.ac.in.
             </aside>
         </section>
 
@@ -29,63 +29,59 @@
             <textarea data-template>
                 ## Executive Summary
                 
-                - Revenue Growth: Exceeded targets by 15%.
-                - Market Expansion: Successfully deployed in APAC region.
-                - Tech Adoption: 90% migration to cloud infrastructure.
+                - Revenue Growth: **+15%**
+                - Cloud Migration: **Complete**
                 
-                Report by: 21f2000973@ds.study.iitm.ac.in
+                Contact: 21f2000973@ds.study.iitm.ac.in
             </textarea>
             <aside class="notes">
-                Use this slide to highlight the three main pillars of our success.
+                Cover the executive summary points using Markdown rendering.
             </aside>
         </section>
 
         <section>
-            <h2>Key Performance Indicators</h2>
-            <p>Our growth metrics for Q3:</p>
+            <h2>Growth Metrics</h2>
             <ul>
-                <li class="fragment">User Acquisition: +20%</li>
-                <li class="fragment">Churn Rate: -5%</li>
-                <li class="fragment">Customer Satisfaction (CSAT): 4.8/5</li>
+                <li class="fragment">User Base: +20%</li>
+                <li class="fragment">Retention: 95%</li>
+                <li class="fragment">NPS Score: 72</li>
             </ul>
-            <p class="fragment" style="color: green; font-weight: bold;">Result: Record High Retention</p>
-            
             <aside class="notes">
-                Click through these points one by one.
+                Click to reveal each metric one by one.
             </aside>
         </section>
 
         <section>
-            <h2>Financial Modeling</h2>
-            <p>We utilized the Black-Scholes model:</p>
+            <h2>Financial Formulas</h2>
+            <p>Compound Interest Formula:</p>
             
-            <div class="fragment" style="font-size: 0.8em; margin-top: 20px;">
-                \[
-                C = S_t N(d_1) - K e^{-rt} N(d_2)
-                \]
-            </div>
-            
+            <p>
+                $$ A = P \left(1 + \frac{r}{n}\right)^{nt} $$
+            </p>
+
+            <p>Black-Scholes Model:</p>
+            <p>
+                $$ C = S_t N(d_1) - K e^{-rt} N(d_2) $$
+            </p>
+
             <aside class="notes">
-                Standard pricing formula for European options.
+                Explain the math behind the Q3 projections. P is the principal amount.
             </aside>
         </section>
 
         <section>
-            <h2>Automated Analysis</h2>
-            <p>Python for real-time fraud detection:</p>
-            <pre><code class="hljs python" data-trim data-line-numbers="1-2|4-6|8">
-import pandas as pd
-import numpy as np
-
-def detect_anomalies(transaction_data):
-    # Calculate Z-Score
-    threshold = 3
-    z_scores = np.abs((transaction_data - transaction_data.mean()) / transaction_data.std())
-    
-    return z_scores > threshold
+            <h2>Algo-Trading Code</h2>
+            <p>Python Implementation:</p>
+            <pre><code class="python" data-trim data-line-numbers>
+def calculate_roi(investment, return_amount):
+    """
+    Calculate Return on Investment
+    """
+    roi = (return_amount - investment) / investment
+    return roi * 100
             </code></pre>
             <aside class="notes">
-                Highlighting the Z-score calculation.
+                Walk through the Python code used for ROI calculation.
             </aside>
         </section>
 
@@ -102,8 +98,8 @@ def detect_anomalies(transaction_data):
     Reveal.initialize({
         controls: true,
         progress: true,
-        center: true,
         hash: true,
+        // IMPORTANT: Ensure all plugins are loaded here
         plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
     });
 </script>
