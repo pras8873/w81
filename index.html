@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Q3 Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/corporate.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+</head>
+<body>
+
+<div class="reveal">
+    <div class="slides">
+
+        <section>
+            <h1>Q3 Financial Report</h1>
+            <h3>Quarterly Earnings Review</h3>
+            <p>
+                <small>Presented by Technical Consulting Team</small><br>
+                <small>Contact: <a href="mailto:21f2000973@ds.study.iitm.ac.in">21f2000973@ds.study.iitm.ac.in</a></small>
+            </p>
+            <aside class="notes">
+                Welcome everyone. Today we will review the Q3 performance, technical integration, and financial outlook.
+            </aside>
+        </section>
+
+        <section data-markdown>
+            <textarea data-template>
+                ## Executive Summary
+                
+                - **Revenue Growth:** Exceeded targets by 15%.
+                - **Market Expansion:** Successfully deployed in APAC region.
+                - **Tech Adoption:** 90% migration to cloud infrastructure.
+                
+                > "Innovation is the specific instrument of entrepreneurship."
+            </textarea>
+            <aside class="notes">
+                Use this slide to highlight the three main pillars of our success this quarter. Emphasize the cloud migration speed.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Key Performance Indicators</h2>
+            <p>Our growth metrics for Q3:</p>
+            <ul>
+                <li class="fragment fade-in-then-semi-out">User Acquisition: +20%</li>
+                <li class="fragment fade-in-then-semi-out">Churn Rate: -5%</li>
+                <li class="fragment fade-in-then-semi-out">Customer Satisfaction (CSAT): 4.8/5</li>
+            </ul>
+            <p class="fragment fade-up" style="color: green; font-weight: bold;">Result: Record High Retention</p>
+            
+            <aside class="notes">
+                Click through these points one by one. Notice the retention metric appearing last for emphasis.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Financial Modeling</h2>
+            <p>We utilized the Black-Scholes model for option pricing evaluations this quarter:</p>
+            
+            <div style="font-size: 0.8em; margin-top: 20px;">
+                \[
+                C = S_t N(d_1) - K e^{-rt} N(d_2)
+                \]
+            </div>
+            
+            <p>Where volatility calculations were derived as:</p>
+            <div style="font-size: 0.8em;">
+                \[
+                d_1 = \frac{\ln(\frac{S_t}{K}) + (r + \frac{\sigma^2}{2})t}{\sigma\sqrt{t}}
+                \]
+            </div>
+
+            <aside class="notes">
+                Explain the variables: S is current stock price, K is strike price, r is risk-free rate.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Automated Analysis</h2>
+            <p>We implemented Python for real-time fraud detection:</p>
+            <pre><code class="hljs python" data-trim data-line-numbers="1-2|4-6|8">
+import pandas as pd
+import numpy as np
+
+def detect_anomalies(transaction_data):
+    # Calculate Z-Score for transaction amounts
+    threshold = 3
+    z_scores = np.abs((transaction_data - transaction_data.mean()) / transaction_data.std())
+    
+    return z_scores > threshold
+            </code></pre>
+            <aside class="notes">
+                Highlight lines 4-6 to show how we calculate standard deviation for anomaly detection.
+            </aside>
+        </section>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+
+<script>
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
+    });
+</script>
+</body>
+</html>
