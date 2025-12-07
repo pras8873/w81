@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Q3 Quarterly Earnings Report</title>
+    <title>Quarterly Earnings Report</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="21f2000973@ds.study.iitm.ac.in">
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
 </head>
 <body>
@@ -17,12 +16,10 @@
     <div class="slides">
 
         <section>
-            <h1>Q3 Financial Report</h1>
-            <p>Presented by Technical Consulting Team</p>
-            <p>Email: 21f2000973@ds.study.iitm.ac.in</p>
-            
+            <h1>Financial Report</h1>
+            <p>21f2000973@ds.study.iitm.ac.in</p>
             <aside class="notes">
-                Introduction slide. Contact email 21f2000973@ds.study.iitm.ac.in is listed here.
+                Introductory slide with required email address.
             </aside>
         </section>
 
@@ -30,53 +27,53 @@
             <textarea data-template>
                 ## Executive Summary
                 
-                - Revenue: **+15%**
-                - Growth: **Stable**
+                - Growth: **High**
+                - Risk: **Low**
                 
                 Note: 21f2000973@ds.study.iitm.ac.in
             </textarea>
             <aside class="notes">
-                This slide uses Markdown for easy formatting.
+                Markdown slide notes.
             </aside>
         </section>
 
         <section>
-            <h2>Growth Metrics</h2>
+            <h2>Timeline</h2>
             <ul>
-                <li class="fragment">Q1: Planning</li>
-                <li class="fragment">Q2: Execution</li>
-                <li class="fragment">Q3: Review</li>
+                <li class="fragment">Phase 1: Concept</li>
+                <li class="fragment">Phase 2: Build</li>
+                <li class="fragment">Phase 3: Launch</li>
             </ul>
             <aside class="notes">
-                These items appear one by one using the fragment class.
+                Fragment animation notes.
             </aside>
         </section>
 
         <section>
-            <h2>Financial Formulas</h2>
-            <p>Black-Scholes Model:</p>
+            <h2>Formulas</h2>
+            <p>$$ E = mc^2 $$</p>
+            
             <p>
-                $$ C = S_t N(d_1) - K e^{-rt} N(d_2) $$
+                \[
+                PV = \frac{FV}{(1 + r)^n}
+                \]
             </p>
             <aside class="notes">
-                Mathematical formula rendered using MathJax/KaTeX.
+                Math equations using LaTeX syntax.
             </aside>
         </section>
 
         <section>
-            <h2>Python Algorithm</h2>
-            <pre><code class="hljs language-python" data-trim data-line-numbers>
-def calculate_profit(revenue, cost):
-    """
-    Calculate Net Profit
-    """
-    return revenue - cost
+            <h2>Code Sample</h2>
+            <pre><code class="python" data-trim data-noescape>
+import numpy as np
 
-# Run calculation
-print(calculate_profit(1000, 200))
+def calculate_risk(data):
+    # This is a comment
+    return np.std(data) * 100
             </code></pre>
             <aside class="notes">
-                Code sample showing syntax highlighting.
+                Code block with syntax highlighting.
             </aside>
         </section>
 
@@ -90,12 +87,22 @@ print(calculate_profit(1000, 200))
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
 <script>
-    // Initialize Reveal.js with all plugins explicitly listed
+    // Initialize with explicit plugin references
     Reveal.initialize({
         controls: true,
         progress: true,
+        center: true,
         hash: true,
-        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
+        
+        // Explicitly enabling the Math and Highlight plugins
+        math: {
+            mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+            config: 'TeX-AMS_HTML-full',
+            // pass other options into `MathJax.Hub.Config()`
+            TeX: { Macros: { RR: "{\\bf R}" } }
+        },
+
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
     });
 </script>
 </body>
