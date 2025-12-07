@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
 </head>
 <body>
@@ -19,61 +20,72 @@
             <h1>Financial Report</h1>
             <p>21f2000973@ds.study.iitm.ac.in</p>
             <aside class="notes">
-                Introductory slide with required email address.
+                Speaker notes for the introduction.
             </aside>
         </section>
 
         <section data-markdown>
             <textarea data-template>
                 ## Executive Summary
-                
-                - Growth: **High**
-                - Risk: **Low**
-                
-                Note: 21f2000973@ds.study.iitm.ac.in
+                - Growth: **+15%**
+                - Note: 21f2000973@ds.study.iitm.ac.in
             </textarea>
             <aside class="notes">
-                Markdown slide notes.
+                Markdown notes.
             </aside>
         </section>
 
         <section>
-            <h2>Timeline</h2>
-            <ul>
-                <li class="fragment">Phase 1: Concept</li>
-                <li class="fragment">Phase 2: Build</li>
-                <li class="fragment">Phase 3: Launch</li>
-            </ul>
-            <aside class="notes">
-                Fragment animation notes.
-            </aside>
-        </section>
-
-        <section>
-            <h2>Formulas</h2>
+            <h2>Math Equations</h2>
             <p>$$ E = mc^2 $$</p>
-            
-            <p>
-                \[
-                PV = \frac{FV}{(1 + r)^n}
-                \]
-            </p>
+            <p>\[ PV = \frac{FV}{(1 + r)^n} \]</p>
             <aside class="notes">
-                Math equations using LaTeX syntax.
+                Math notes.
             </aside>
         </section>
 
         <section>
-            <h2>Code Sample</h2>
-            <pre><code class="python" data-trim data-noescape>
-import numpy as np
+            <h2>Fragments</h2>
+            <p class="fragment">Point 1</p>
+            <p class="fragment">Point 2</p>
+            <aside class="notes">
+                Fragment notes.
+            </aside>
+        </section>
 
-def calculate_risk(data):
-    # This is a comment
-    return np.std(data) * 100
+        <section>
+            <h2>Code Block A</h2>
+            <pre><code class="python" data-trim data-line-numbers>
+def standard_check():
+    print("Hello World")
+    return True
             </code></pre>
             <aside class="notes">
-                Code block with syntax highlighting.
+                Standard code block notes.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Code Block B</h2>
+            <pre><code class="hljs python" data-trim>
+import numpy as np
+# This is a comment that should be colored
+x = np.array([1, 2, 3])
+            </code></pre>
+            <aside class="notes">
+                Manual class notes.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Code Block C</h2>
+            <pre><code class="language-python" data-trim data-noescape>
+x = 10
+y = 20
+print(x + y)
+            </code></pre>
+            <aside class="notes">
+                Language prefix notes.
             </aside>
         </section>
 
@@ -87,22 +99,13 @@ def calculate_risk(data):
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
 <script>
-    // Initialize with explicit plugin references
     Reveal.initialize({
         controls: true,
         progress: true,
-        center: true,
         hash: true,
-        
-        // Explicitly enabling the Math and Highlight plugins
-        math: {
-            mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-            config: 'TeX-AMS_HTML-full',
-            // pass other options into `MathJax.Hub.Config()`
-            TeX: { Macros: { RR: "{\\bf R}" } }
-        },
-
-        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+        center: true,
+        // FORCE Enable Highlight Plugin
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
     });
 </script>
 </body>
