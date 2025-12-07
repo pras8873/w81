@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
 </head>
 <body>
@@ -18,10 +19,10 @@
         <section>
             <h1>Q3 Financial Report</h1>
             <p>Presented by Technical Consulting Team</p>
-            <p style="color: #42affa;">21f2000973@ds.study.iitm.ac.in</p>
+            <p>Email: 21f2000973@ds.study.iitm.ac.in</p>
             
             <aside class="notes">
-                Introduction slide. Welcome stakeholders and introduce the email contact 21f2000973@ds.study.iitm.ac.in.
+                Introduction slide. Contact email 21f2000973@ds.study.iitm.ac.in is listed here.
             </aside>
         </section>
 
@@ -29,59 +30,53 @@
             <textarea data-template>
                 ## Executive Summary
                 
-                - Revenue Growth: **+15%**
-                - Cloud Migration: **Complete**
+                - Revenue: **+15%**
+                - Growth: **Stable**
                 
-                Contact: 21f2000973@ds.study.iitm.ac.in
+                Note: 21f2000973@ds.study.iitm.ac.in
             </textarea>
             <aside class="notes">
-                Cover the executive summary points using Markdown rendering.
+                This slide uses Markdown for easy formatting.
             </aside>
         </section>
 
         <section>
             <h2>Growth Metrics</h2>
             <ul>
-                <li class="fragment">User Base: +20%</li>
-                <li class="fragment">Retention: 95%</li>
-                <li class="fragment">NPS Score: 72</li>
+                <li class="fragment">Q1: Planning</li>
+                <li class="fragment">Q2: Execution</li>
+                <li class="fragment">Q3: Review</li>
             </ul>
             <aside class="notes">
-                Click to reveal each metric one by one.
+                These items appear one by one using the fragment class.
             </aside>
         </section>
 
         <section>
             <h2>Financial Formulas</h2>
-            <p>Compound Interest Formula:</p>
-            
-            <p>
-                $$ A = P \left(1 + \frac{r}{n}\right)^{nt} $$
-            </p>
-
             <p>Black-Scholes Model:</p>
             <p>
                 $$ C = S_t N(d_1) - K e^{-rt} N(d_2) $$
             </p>
-
             <aside class="notes">
-                Explain the math behind the Q3 projections. P is the principal amount.
+                Mathematical formula rendered using MathJax/KaTeX.
             </aside>
         </section>
 
         <section>
-            <h2>Algo-Trading Code</h2>
-            <p>Python Implementation:</p>
-            <pre><code class="python" data-trim data-line-numbers>
-def calculate_roi(investment, return_amount):
+            <h2>Python Algorithm</h2>
+            <pre><code class="hljs language-python" data-trim data-line-numbers>
+def calculate_profit(revenue, cost):
     """
-    Calculate Return on Investment
+    Calculate Net Profit
     """
-    roi = (return_amount - investment) / investment
-    return roi * 100
+    return revenue - cost
+
+# Run calculation
+print(calculate_profit(1000, 200))
             </code></pre>
             <aside class="notes">
-                Walk through the Python code used for ROI calculation.
+                Code sample showing syntax highlighting.
             </aside>
         </section>
 
@@ -95,11 +90,11 @@ def calculate_roi(investment, return_amount):
 <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
 <script>
+    // Initialize Reveal.js with all plugins explicitly listed
     Reveal.initialize({
         controls: true,
         progress: true,
         hash: true,
-        // IMPORTANT: Ensure all plugins are loaded here
         plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
     });
 </script>
