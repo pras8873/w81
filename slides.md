@@ -2,67 +2,62 @@
 marp: true
 theme: gaia
 paginate: true
-style: |
-  section {
-    font-family: 'Helvetica', sans-serif;
-  }
-  h1 {
-    color: #2d3436;
-  }
+author: 21f2000973@ds.study.iitm.ac.in
 ---
 
-# Product Documentation 
-## Technical Guide
+<style>
+section {
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+}
+h1 {
+  color: #0984e3;
+}
+</style>
 
-**Created by:**
-21f2000973@ds.study.iitm.ac.in
+# Technical Documentation
+## Product Overview
 
----
-
-# 1. Theme Specification
-
-We have specified the theme in the YAML and via directives to ensure compatibility.
-
-* **Theme:** Gaia
-* **Directives:** Header, Footer, Paginate
-* **Styles:** Custom CSS applied to H1 headers.
+**Author:** 21f2000973@ds.study.iitm.ac.in
 
 ---
 
-# 2. Mathematical Analysis
+# 1. Maintainability
 
-We use LaTeX for algorithmic complexity documentation.
+We use a "Docs-as-Code" approach.
 
-**Time Complexity:**
+* **Repo:** GitHub based
+* **Format:** Markdown
+* **Theme:** Custom Gaia Specification
+
+*This slide uses the header directive.*
+
+---
+
+# 2. Algorithmic Complexity
+
+We track the performance of our API endpoints.
+
+**Time Complexity Formula:**
 
 $$
-T(n) = O(n \log n) + \lambda
+T(n) = O(n \log n) + C
 $$
 
 **Space Complexity:**
 
 $$
-S(n) = O(n^2)
+S(n) = O(n)
 $$
 
 ---
 
-# 3. Custom Directives
+![bg right:40%](https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
 
-This slide uses **local Marp directives** to invert the color scheme.
+# 3. Visual Assets
 
-* Background: Dark (`#2d3436`)
-* Text: Light (`#dfe6e9`)
-* Contact: 21f2000973@ds.study.iitm.ac.in
+We use background images to illustrate the user interface.
 
----
-
-![bg right:40%](https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
-
-# 4. Visual Assets
-
-Using background images for visual impact.
-
-* **Documentation:** Git-based
-* **Format:** Markdown
-* **Output:** PDF/HTML
+- **Email:** 21f2000973@ds.study.iitm.ac.in
+- **Directives:** Background (right)
+- **Theme:** Gaia
