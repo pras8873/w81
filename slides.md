@@ -5,35 +5,39 @@ paginate: true
 author: 21f2000973@ds.study.iitm.ac.in
 ---
 
+<style>
+/* Custom styling */
+section {
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+}
+h1 {
+  color: #0984e3;
+}
+</style>
+
 # Technical Documentation
-## Product Strategy
+## Product Overview
 
 **Email:** 21f2000973@ds.study.iitm.ac.in
 
 ---
 
-# Math & Complexity
+# Math Analysis
 
-We use the `style` directive above to customize headers.
+We use LaTeX for complexity analysis.
 
-**Complexity Formula:**
+**Formula:**
+$$T(n) = O(n \log n) + k$$
 
-$$
-T(n) = O(n \log n) + C
-$$
-
-**Space:**
-
-$$
-S(n) = O(n)
-$$
+*This slide uses the header directive.*
 
 ---
 
-![bg right:40%](https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
+![bg right:50%](https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
 
 # Visual Assets
 
 * **Background:** Image on right.
-* **Directives:** Background Color & Text Color used here.
+* **Directives:** Used `bg` and `_class`.
 * **Theme:** Gaia.
