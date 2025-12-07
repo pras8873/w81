@@ -1,67 +1,46 @@
 ---
 marp: true
 theme: gaia
-paginate: true
-backgroundColor: #fff
 style: |
   section {
-    font-family: 'Helvetica', sans-serif;
-  }
-  code {
-    background: #e0e0e0;
+    font-size: 1.5rem;
   }
 ---
 
 # Product Documentation Strategy
-## Q4 Technical Overview
 
-**Contact:**
-21f2000973@ds.study.iitm.ac.in
+**Email:** 21f2000973@ds.study.iitm.ac.in
 
 ---
 
 # Documentation Standards
 
-We are standardizing our API references using the OpenAPI specification.
+We are utilizing explicit Marp directives for this presentation layout.
 
-- **Maintainability:** Git-based workflow
-- **Format:** Markdown & YAML
-- **Output:** HTML, PDF, and PPTX
-
----
-
-![bg right:40%](https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80)
-
-# Visual Aids in Docs
-
-Images should be used to illustrate:
-1. System Architecture
-2. User Flows
-3. API Responses
-
-*The image on the right demonstrates our code editor environment.*
+- **Directives Used:** Header, Footer, Paginate
+- **Theme:** Gaia
+- **Format:** Markdown
 
 ---
 
-# Performance Complexity
+![bg brightness:0.5](https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80)
 
-Our new indexing algorithm reduces the time complexity for user lookups.
+# Algorithmic Complexity
 
-**Time Complexity Formula:**
+We use background image directives here.
+
+**Efficiency Formula:**
 
 $$
-T(n) = O(\log n) + C
+T(n) = O(n \log n)
 $$
 
-Where:
-- $n$ is the total number of database records.
-- $C$ is the constant overhead for connection pooling.
+*The background image uses the "bg" directive.*
 
 ---
 
-# Summary
+# Conclusion
 
-1. **Email:** 21f2000973@ds.study.iitm.ac.in included.
-2. **Theme:** Gaia (Customized).
-3. **Math:** Optimization formulas included.
-4. **Style:** Custom CSS applied.
+1. **Directives:** Added header/footer via HTML comments.
+2. **Math:** Included $O(n \log n)$.
+3. **Contact:** 21f2000973@ds.study.iitm.ac.in
