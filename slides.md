@@ -6,7 +6,7 @@ author: 21f2000973@ds.study.iitm.ac.in
 ---
 
 <style>
-/* Custom styling using CSS as shown in the tutorial */
+/* Custom Theme Specification */
 section {
   font-family: 'Arial', sans-serif;
   font-size: 30px;
@@ -17,48 +17,20 @@ h1 {
 </style>
 
 # Technical Documentation
-## Product Overview
+## All Requirements in One Place
 
-**Author:** 21f2000973@ds.study.iitm.ac.in
+**Email:** 21f2000973@ds.study.iitm.ac.in
 
----
-
-# 1. Directives Implementation
-
-We are using specific Marp directives to control the headers and footers on this slide.
-
-* **Header:** Added via `_header` directive.
-* **Footer:** Added via `_footer` directive.
-* **Maintainability:** Git-based workflow.
+**Algorithmic Complexity (Math):**
+$$T(n) = O(n \log n) + k$$
 
 ---
 
-# 2. Algorithmic Complexity
+![bg right:50%](https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
 
-This slide uses color directives to invert the theme.
+# Visual Assets
 
-**Time Complexity:**
-
-$$
-T(n) = O(n \log n) + C
-$$
-
-**Space Complexity:**
-
-$$
-S(n) = O(n)
-$$
-
-*The background is set using the `_backgroundColor` directive.*
-
----
-
-![bg right:40%](https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
-
-# 3. Visual Assets
-
-We use background images for visual impact.
-
-* **Email:** 21f2000973@ds.study.iitm.ac.in
-* **Theme:** Gaia (Customized)
-* **Image:** Positioned right
+This slide demonstrates:
+1.  **Background Image** (Right side)
+2.  **Marp Directives** (Header & Color)
+3.  **Custom Styling** (White text)
