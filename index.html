@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Q3 Quarterly Earnings Report</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="21f2000973@ds.study.iitm.ac.in">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/corporate.css" id="theme">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
@@ -16,12 +18,11 @@
         <section>
             <h1>Q3 Financial Report</h1>
             <h3>Quarterly Earnings Review</h3>
-            <p>
-                <small>Presented by Technical Consulting Team</small><br>
-                <small>Email<a href="mailto:21f2000973@ds.study.iitm.ac.in">21f2000973@ds.study.iitm.ac.in</a></small>
-            </p>
+            <p>Presented by Technical Consulting Team</p>
+            <p style="font-weight: bold; color: #42affa;">21f2000973@ds.study.iitm.ac.in</p>
+            
             <aside class="notes">
-                Welcome everyone. Today we will review the Q3 performance, technical integration, and financial outlook.
+                Welcome everyone. Today we will review the Q3 performance.
             </aside>
         </section>
 
@@ -33,10 +34,10 @@
                 - **Market Expansion:** Successfully deployed in APAC region.
                 - **Tech Adoption:** 90% migration to cloud infrastructure.
                 
-                > "Innovation is the specific instrument of entrepreneurship."
+                Report by: 21f2000973@ds.study.iitm.ac.in
             </textarea>
             <aside class="notes">
-                Use this slide to highlight the three main pillars of our success this quarter. Emphasize the cloud migration speed.
+                Use this slide to highlight the three main pillars of our success this quarter.
             </aside>
         </section>
 
@@ -51,13 +52,13 @@
             <p class="fragment fade-up" style="color: green; font-weight: bold;">Result: Record High Retention</p>
             
             <aside class="notes">
-                Click through these points one by one. Notice the retention metric appearing last for emphasis.
+                Click through these points one by one.
             </aside>
         </section>
 
         <section>
             <h2>Financial Modeling</h2>
-            <p>We utilized the Black-Scholes model for option pricing evaluations this quarter:</p>
+            <p>We utilized the Black-Scholes model:</p>
             
             <div style="font-size: 0.8em; margin-top: 20px;">
                 \[
@@ -65,34 +66,27 @@
                 \]
             </div>
             
-            <p>Where volatility calculations were derived as:</p>
-            <div style="font-size: 0.8em;">
-                \[
-                d_1 = \frac{\ln(\frac{S_t}{K}) + (r + \frac{\sigma^2}{2})t}{\sigma\sqrt{t}}
-                \]
-            </div>
-
             <aside class="notes">
-                Explain the variables: S is current stock price, K is strike price, r is risk-free rate.
+                Standard pricing formula for European options.
             </aside>
         </section>
 
         <section>
             <h2>Automated Analysis</h2>
-            <p>We implemented Python for real-time fraud detection:</p>
+            <p>Python for real-time fraud detection:</p>
             <pre><code class="hljs python" data-trim data-line-numbers="1-2|4-6|8">
 import pandas as pd
 import numpy as np
 
 def detect_anomalies(transaction_data):
-    # Calculate Z-Score for transaction amounts
+    # Calculate Z-Score
     threshold = 3
     z_scores = np.abs((transaction_data - transaction_data.mean()) / transaction_data.std())
     
     return z_scores > threshold
             </code></pre>
             <aside class="notes">
-                Highlight lines 4-6 to show how we calculate standard deviation for anomaly detection.
+                Highlighting the Z-score calculation.
             </aside>
         </section>
 
