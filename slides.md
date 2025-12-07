@@ -2,45 +2,41 @@
 marp: true
 theme: gaia
 paginate: true
-backgroundColor: #ffffff
 style: |
   section {
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
+    font-family: 'Helvetica', sans-serif;
   }
   h1 {
-    color: #2c3e50;
-  }
-  code {
-    background-color: #e0e0e0;
+    color: #2d3436;
   }
 ---
 
-# Product Documentation Plan
-## Technical Overview
+# Product Documentation 
+## Technical Guide
 
-**Email:** 21f2000973@ds.study.iitm.ac.in
-
----
-
-# 1. Custom Theme & Styling
-
-This presentation uses the **Gaia** theme with custom CSS overrides defined in the YAML header.
-
-* **Font:** Arial (Customized via `style`)
-* **Header Color:** Dark Blue (Customized via `style`)
-* **Pagination:** Enabled
+**Created by:**
+21f2000973@ds.study.iitm.ac.in
 
 ---
 
-# 2. Mathematical Complexity
+# 1. Theme Specification
 
-We use standard LaTeX formatting for our algorithm documentation.
+We have specified the theme in the YAML and via directives to ensure compatibility.
+
+* **Theme:** Gaia
+* **Directives:** Header, Footer, Paginate
+* **Styles:** Custom CSS applied to H1 headers.
+
+---
+
+# 2. Mathematical Analysis
+
+We use LaTeX for algorithmic complexity documentation.
 
 **Time Complexity:**
 
 $$
-T(n) = O(n \log n) + \sum_{i=1}^{k} \frac{1}{i}
+T(n) = O(n \log n) + \lambda
 $$
 
 **Space Complexity:**
@@ -51,22 +47,22 @@ $$
 
 ---
 
-# 3. Local Directives
+# 3. Custom Directives
 
-This slide uses **Marp directives** (HTML comments) to invert the colors specifically for this page.
+This slide uses **local Marp directives** to invert the color scheme.
 
-* `_backgroundColor: #222`
-* `_color: #fff`
+* Background: Dark (`#2d3436`)
+* Text: Light (`#dfe6e9`)
+* Contact: 21f2000973@ds.study.iitm.ac.in
 
 ---
 
-![bg right:33%](https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
+![bg right:40%](https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
 
 # 4. Visual Assets
 
-We use background images to create engaging layouts.
+Using background images for visual impact.
 
-The image on the right is placed using the `bg` syntax.
-
-**Contact:**
-21f2000973@ds.study.iitm.ac.in
+* **Documentation:** Git-based
+* **Format:** Markdown
+* **Output:** PDF/HTML
