@@ -1,46 +1,50 @@
 ---
 marp: true
-theme: gaia
-style: |
-  section {
-    font-size: 1.5rem;
-  }
 ---
 
-# Product Documentation Strategy
+# Product Documentation
+## Strategy & Implementation
 
-**Email:** 21f2000973@ds.study.iitm.ac.in
+**Technical Writer:**
+21f2000973@ds.study.iitm.ac.in
 
 ---
 
-# Documentation Standards
+# 1. Version Control Strategy
 
-We are utilizing explicit Marp directives for this presentation layout.
+We are moving to a "Docs as Code" approach. This allows us to use git for versioning.
 
-- **Directives Used:** Header, Footer, Paginate
-- **Theme:** Gaia
-- **Format:** Markdown
+* **Branching:** Main for production, feature branches for drafts.
+* **Review:** Pull requests required for text changes.
+
+*This slide uses the 'header' directive.*
 
 ---
 
-![bg brightness:0.5](https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80)
+# 2. Algorithmic Complexity
 
-# Algorithmic Complexity
+We must document the performance implications of our API.
 
-We use background image directives here.
-
-**Efficiency Formula:**
+**Search Complexity:**
 
 $$
-T(n) = O(n \log n)
+T(n) = O(n \log n) + k
 $$
 
-*The background image uses the "bg" directive.*
+Where:
+- $n$ is the dataset size.
+- $k$ is the latency.
 
 ---
 
-# Conclusion
+![bg right:40%](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
 
-1. **Directives:** Added header/footer via HTML comments.
-2. **Math:** Included $O(n \log n)$.
-3. **Contact:** 21f2000973@ds.study.iitm.ac.in
+# 3. Visual Style Guide
+
+Our documentation uses specific imagery to guide users.
+
+- **Screenshots:** 16:9 aspect ratio.
+- **Diagrams:** MermaidJS support.
+- **Icons:** SVG format only.
+
+*Contact: 21f2000973@ds.study.iitm.ac.in*
