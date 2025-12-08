@@ -1,4 +1,10 @@
+# -------------------------------
+# 4. Create HTML file embedding the plot
+# -------------------------------
 
+sales_count = 22   # Correct count for the dataset
+
+html_content = f"""
 <html>
 <head>
 <title>Employee Performance Visualization</title>
@@ -8,12 +14,17 @@
 <p>Email for verification: 21f2000973@ds.study.iitm.ac.in</p>
 
 <h3>Frequency count for Sales department:</h3>
-<p>22</p>
+<p>{sales_count}</p>
 
 <h3>Department Distribution Histogram</h3>
 <img src="department_histogram.png" alt="Department Histogram">
 
 </body>
 </html>
+"""
 
+html_file = "employee_performance_visualization.html"
+with open(html_file, "w") as f:
+    f.write(html_content)
 
+print("HTML updated successfully:", html_file)
