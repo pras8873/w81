@@ -30,7 +30,6 @@ blockquote {
 #### **21f2000973@ds.study.iitm.ac.in**
 
 ---
-
 # Why Marp?
 
 - Version-control friendly  
@@ -48,4 +47,5 @@ blockquote {
 ### (Using `heatmap.png` from repository root)
 
 This slide now uses the proper Marp syntax:
+
 
