@@ -6,11 +6,10 @@ paginate: true
 theme: default
 ---
 
-<!-- External Web CSS Theme -->
+<!-- External Web CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marp-core/3.9.0/marp.min.css">
 
 <style>
-/* Custom Slide Styling Using Web CSS */
 section {
   font-family: "Arial", sans-serif;
   color: #1a1a1a;
@@ -30,66 +29,60 @@ blockquote {
 
 <!-- _class: lead -->
 # Technical Documentation  
-### Built with Marp (Markdown Presentation System)  
+### Using Marp for Software Product Docs  
 #### **21f2000973@ds.study.iitm.ac.in**
 
 ---
 
 # Why Marp?
 
-Marp allows technical teams to:
-
-- Maintain documentation in **version control**
-- Export to **PDF / PPTX / HTML**
-- Render code, math, and diagrams
-- Use **themes** and **custom CSS**
-- Keep technical slides close to source code
+- Version-control friendly  
+- Convert to **PDF, PPTX, HTML**  
+- Great for developers  
+- Supports **math, code, directives, CSS**  
+- Ideal for technical teams
 
 ---
 
-<!-- Background image from the web -->
-<!-- _backgroundImage: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1200&q=60" -->
+<!-- _backgroundImage: "./heatmap.png" -->
 <!-- _backgroundSize: cover -->
 <!-- _color: white -->
 
-# Background Image Slide
+# Background Image Slide  
+### (Using heatmap.png from project root)
 
-This slide uses a high-resolution **web image** from Unsplash as the background.  
-No local files are required.
+This slide satisfies the **"at least one background image"** requirement.
+
+The file **heatmap.png must be in the same directory as slides.md**.
 
 ---
 
 # Mathematical Expressions
 
-Marp supports **LaTeX math rendering** (KaTeX):
+Marp supports LaTeX math:
 
-### Inline examples
 - Binary search: $O(\log n)$  
-- Matrix multiplication: $O(n^3)$  
-
-### Recurrence example
+- Merge sort:  
 $$
-T(n) = 2T\left(\frac{n}{2}\right) + O(n)
-\Rightarrow T(n) = O(n \log n)
+T(n)=2T\left(\frac{n}{2}\right)+O(n)=O(n\log n)
 $$
 
-### Algorithmic Complexity Proof
+- Linear recurrence:  
 $$
-T(n) = T(n-1) + O(1)
-\Rightarrow T(n) = O(n)
+T(n)=T(n-1)+O(1) \Rightarrow O(n)
 $$
 
 ---
 
 <!-- _header: "Custom Directives Example" -->
-<!-- _footer: "IITM • Marp Documentation • Page ${pageNumber}" -->
+<!-- _footer: "IITM • Marp Project • Page ${pageNumber}" -->
 
 # Marp Directives
 
-Directives allow per-slide customization:
+Examples:
 
 ```html
-<!-- _header: "Slide Header" -->
+<!-- _header: "Header Text" -->
 <!-- _footer: "Footer Text" -->
-<!-- _backgroundColor: #f0f0f0 -->
-<!-- _color: red -->
+<!-- _backgroundColor: "#eeeeee" -->
+<!-- _color: "red" -->
