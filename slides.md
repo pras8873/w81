@@ -45,6 +45,11 @@ blockquote {
 # Background Image Slide
 
 This background uses the file:
+
+```
+![bg cover](heatmap.png)
+```
+
 ✔ Satisfies “at least one slide with a background image”.
 
 ---
@@ -85,3 +90,13 @@ Examples of useful Marp directives:
 <!-- _backgroundColor: "#eeeeee" -->
 <!-- _color: red -->
 <!-- _class: lead -->
+```
+
+These provide slide-level customization.
+
+---
+
+# Thank You!
+
+**Email:** 21f2000973@ds.study.iitm.ac.in  
+Technical Documentation • Marp Presentation
