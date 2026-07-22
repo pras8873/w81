@@ -1,112 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Quarterly Earnings Report</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="21f2000973@ds.study.iitm.ac.in">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+    <title>Prashant | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Background Glow Effects -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
 
-<div class="reveal">
-    <div class="slides">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Prashant<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active" data-target="home">Home</a></li>
+            <li><a href="#projects" data-target="projects">Projects</a></li>
+            <li><a href="#creative" data-target="creative">Creative</a></li>
+            <li><a href="#contact" data-target="contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <section>
-            <h1>Financial Report</h1>
-            <p>21f2000973@ds.study.iitm.ac.in</p>
-            <aside class="notes">
-                Speaker notes for the introduction.
-            </aside>
+    <!-- Main Content Area -->
+    <main class="container">
+
+        <!-- HOME SECTION -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Hi, I'm <span class="highlight">Prashant</span></h1>
+                    <h2>Software Developer | Data Analytics | Metallurgy AI</h2>
+                    <p>
+                        I build intelligent automation systems, AI agents, and robust software solutions.
+                        Bridging the gap between industrial processes like metallurgy and cutting-edge machine learning.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary" onclick="navigateTo('projects')">View Projects</button>
+                        <a href="https://www.linkedin.com/in/prashant1111/" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <!-- Replace src with your actual headshot URL -->
+                    <img src="https://via.placeholder.com/400x400/1e293b/38bdf8?text=Prashant+Headshot" alt="Prashant's Headshot">
+                </div>
+            </div>
         </section>
 
-        <section data-markdown>
-            <textarea data-template>
-                ## Executive Summary
-                - Growth: **+15%**
-                - Note: 21f2000973@ds.study.iitm.ac.in
-            </textarea>
-            <aside class="notes">
-                Markdown notes.
-            </aside>
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2>Featured <span class="highlight">Projects</span></h2>
+                <p>A collection of my recent work and experiments.</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Card 1: MetallurgyGPT -->
+                <div class="card">
+                    <div class="card-badge">AI Agent</div>
+                    <h3>MetallurgyGPT</h3>
+                    <p>An advanced AI agent specialized in metallurgical intelligence, machine learning for metallurgy systems, and automation.</p>
+                    <a href="https://metallurgy.prashu.dev" target="_blank" class="card-link">Live Demo <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 2: YT Multi-Viewer -->
+                <div class="card">
+                    <div class="card-badge">Web App</div>
+                    <h3>YT Multi-Viewer</h3>
+                    <p>A multi-instance embedded video player allowing simultaneous viewing of multiple YouTube streams seamlessly.</p>
+                    <a href="#" class="card-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Cards 3 to 9: Empty Placeholders -->
+                <div class="card empty-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Upcoming Project</h3>
+                    <p>Currently brewing something awesome. Check back soon.</p>
+                </div>
+                <div class="card empty-card"><i class="fas fa-code"></i><h3>Upcoming Project</h3></div>
+                <div class="card empty-card"><i class="fas fa-code"></i><h3>Upcoming Project</h3></div>
+                <div class="card empty-card"><i class="fas fa-code"></i><h3>Upcoming Project</h3></div>
+                <div class="card empty-card"><i class="fas fa-code"></i><h3>Upcoming Project</h3></div>
+                <div class="card empty-card"><i class="fas fa-code"></i><h3>Upcoming Project</h3></div>
+                <div class="card empty-card"><i class="fas fa-code"></i><h3>Upcoming Project</h3></div>
+            </div>
         </section>
 
-        <section>
-            <h2>Math Equations</h2>
-            <p>$$ E = mc^2 $$</p>
-            <p>\[ PV = \frac{FV}{(1 + r)^n} \]</p>
-            <aside class="notes">
-                Math notes.
-            </aside>
+        <!-- CREATIVE SECTION (Poems/Blogs) -->
+        <section id="creative" class="section">
+            <div class="section-header">
+                <h2>Creative <span class="highlight">Writing</span></h2>
+                <div class="toggle-container">
+                    <button class="toggle-btn active" data-frame="poems">📜 Poems</button>
+                    <button class="toggle-btn" data-frame="blogs">📝 Blogs</button>
+                </div>
+            </div>
+            <div class="iframe-wrapper">
+                <div class="iframe-loader">Loading content...</div>
+                <iframe id="content-frame" src="https://poems.prashu.dev" frameborder="0" title="Creative Content"></iframe>
+            </div>
+            <div class="iframe-fallback">
+                <p>Having trouble viewing? <a id="external-link" href="https://poems.prashu.dev" target="_blank">Open in a new tab</a></p>
+            </div>
         </section>
 
-        <section>
-            <h2>Fragments</h2>
-            <p class="fragment">Point 1</p>
-            <p class="fragment">Point 2</p>
-            <aside class="notes">
-                Fragment notes.
-            </aside>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2>Get In <span class="highlight">Touch</span></h2>
+                <p>Have a project in mind or just want to say hi?</p>
+            </div>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
         </section>
 
-        <section>
-            <h2>Code Block A</h2>
-            <pre><code class="python" data-trim data-line-numbers>
-def standard_check():
-    print("Hello World")
-    return True
-            </code></pre>
-            <aside class="notes">
-                Standard code block notes.
-            </aside>
-        </section>
+    </main>
 
-        <section>
-            <h2>Code Block B</h2>
-            <pre><code class="hljs python" data-trim>
-import numpy as np
-# This is a comment that should be colored
-x = np.array([1, 2, 3])
-            </code></pre>
-            <aside class="notes">
-                Manual class notes.
-            </aside>
-        </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Prashant. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#" id="privacy-link">Privacy Policy</a>
+        </div>
+    </footer>
 
-        <section>
-            <h2>Code Block C</h2>
-            <pre><code class="language-python" data-trim data-noescape>
-x = 10
-y = 20
-print(x + y)
-            </code></pre>
-            <aside class="notes">
-                Language prefix notes.
-            </aside>
-        </section>
-
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p><strong>Last Updated: July 2026</strong></p>
+            <p>This portfolio website does not actively track your personal data. Any information submitted via the contact form is used strictly for communication purposes and is never shared with third parties.</p>
+            <p>Embedded content (like YouTube videos or sub-domains) may behave in the exact same way as if the visitor has visited the other website, which may collect data, use cookies, or embed additional third-party tracking.</p>
+        </div>
     </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
-
-<script>
-    Reveal.initialize({
-        controls: true,
-        progress: true,
-        hash: true,
-        center: true,
-        // FORCE Enable Highlight Plugin
-        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
-    });
-</script>
+    <script src="app.js"></script>
 </body>
 </html>
