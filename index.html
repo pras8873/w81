@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prashant | Portfolio</title>
+    <title>Prashant Priyadarshi | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Official LinkedIn Badge SDK -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
 <body>
-    <!-- Background Glow Effects -->
     <div class="bg-glow glow-1"></div>
     <div class="bg-glow glow-2"></div>
 
@@ -24,18 +24,19 @@
         </ul>
     </nav>
 
-    <!-- Main Content Area -->
     <main class="container">
 
         <!-- HOME SECTION -->
         <section id="home" class="section active">
+
+            <!-- Hero Banner -->
             <div class="hero">
                 <div class="hero-content">
-                    <h1>Hi, I'm <span class="highlight">Prashant</span></h1>
-                    <h2>Software Developer | Data Analytics | Metallurgy AI</h2>
+                    <div class="quote-tag">"Torture the data, and it will confess to anything."</div>
+                    <h1>Hi, I'm <span class="highlight">Prashant Priyadarshi</span></h1>
+                    <h2>Data Science Enthusiast | Software Developer | Analytical Problem-Solver</h2>
                     <p>
-                        I build intelligent automation systems, AI agents, and robust software solutions.
-                        Bridging the gap between industrial processes like metallurgy and cutting-edge machine learning.
+                        IIT Madras graduate with a strong foundation in Programming and Data Science, paired with metallurgical plant engineering expertise. I build software and AI solutions at the intersection of process optimization, data science, and industrial engineering.
                     </p>
                     <div class="hero-actions">
                         <button class="btn btn-primary" onclick="navigateTo('projects')">View Projects</button>
@@ -44,25 +45,92 @@
                         </a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <!-- Replace src with your actual headshot URL -->
-                    <img src="https://via.placeholder.com/400x400/1e293b/38bdf8?text=Prashant+Headshot" alt="Prashant's Headshot">
+
+                <!-- Live LinkedIn Widget Embed -->
+                <div class="hero-widget">
+                    <div class="badge-base LI-profile-badge"
+                         data-locale="en_US"
+                         data-size="medium"
+                         data-theme="dark"
+                         data-type="VERTICAL"
+                         data-vanity="prashant1111"
+                         data-version="v1">
+                         <a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/prashant1111?trk=profile-badge">Prashant Priyadarshi</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- Experience & Education Grid -->
+            <div class="profile-summary-grid">
+
+                <!-- Experience Timeline -->
+                <div class="summary-card">
+                    <h3><i class="fas fa-briefcase highlight"></i> Professional Experience</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-title">Engineer / Graduate Engineer Trainee</div>
+                            <div class="timeline-company">SMS India Pvt. Ltd. | Aug 2022 – Present</div>
+                            <p>Specializing in metallurgical plant engineering, metals technology, and analytical process optimization in the metals industry.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-title">Founder</div>
+                            <div class="timeline-company">Yummy Physics (Formerly Ydemy Classes) | Feb 2020 – Aug 2024</div>
+                            <p>Founded a coaching business evolved into a thriving YouTube channel delivering animated 3D physics educational content for competitive exams.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-title">Entrepreneurship Cell</div>
+                            <div class="timeline-company">IIT Kharagpur | Aug 2019 – Aug 2022</div>
+                            <p>Engagement in Android application development, website design, and startup ecosystems.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Timeline -->
+                <div class="summary-card">
+                    <h3><i class="fas fa-graduation-cap highlight"></i> Education</h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-title">B.S. in Programming & Data Science</div>
+                            <div class="timeline-company">Indian Institute of Technology, Madras (IIT Madras) | 2021 – 2025</div>
+                            <p>CGPA: 7.0. Core Focus: Machine Learning, Big Data Analysis, Web Development, and Algorithm Design.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-title">B.Tech in Metallurgical Engineering</div>
+                            <div class="timeline-company">NIAMT (formerly NIFFT Ranchi) | 2018 – 2022</div>
+                            <p>In-depth study of materials science, metal extraction, alloy design, and manufacturing systems.</p>
+                        </div>
+                    </div>
+
+                    <h3 style="margin-top: 1.5rem;"><i class="fas fa-award highlight"></i> Key Certifications</h3>
+                    <ul class="cert-list">
+                        <li><i class="fas fa-certificate"></i> Solar Power Generation & SPV Systems (NPTI)</li>
+                        <li><i class="fas fa-certificate"></i> Python Programming & AI (Udemy / MyCaptain)</li>
+                        <li><i class="fas fa-certificate"></i> Hyperloop Engineering Mechanics (Udemy)</li>
+                    </ul>
+                </div>
+
+            </div>
+
         </section>
 
         <!-- PROJECTS SECTION -->
         <section id="projects" class="section">
             <div class="section-header">
                 <h2>Featured <span class="highlight">Projects</span></h2>
-                <p>A collection of my recent work and experiments.</p>
+                <p>Selected engineering, machine learning, and software projects.</p>
             </div>
             <div class="projects-grid">
+
                 <!-- Card 1: MetallurgyGPT -->
                 <div class="card">
                     <div class="card-badge">AI Agent</div>
                     <h3>MetallurgyGPT</h3>
-                    <p>An advanced AI agent specialized in metallurgical intelligence, machine learning for metallurgy systems, and automation.</p>
+                    <p>Domain-specific AI agent powered by LLMs for metallurgical process automation, plant analytics, and materials science intelligence.</p>
                     <a href="https://metallurgy.prashu.dev" target="_blank" class="card-link">Live Demo <i class="fas fa-arrow-right"></i></a>
                 </div>
 
@@ -70,17 +138,27 @@
                 <div class="card">
                     <div class="card-badge">Web App</div>
                     <h3>YT Multi-Viewer</h3>
-                    <p>A multi-instance embedded video player allowing simultaneous viewing of multiple YouTube streams seamlessly.</p>
+                    <p>Multi-instance video streaming platform tailored for simultaneous video analytics and multi-feed viewing.</p>
                     <a href="#" class="card-link">View Project <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <!-- Cards 3 to 9: Empty Placeholders -->
-                <div class="card empty-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Upcoming Project</h3>
-                    <p>Currently brewing something awesome. Check back soon.</p>
+                <!-- Card 3: Kaggle Bank Telemarketing ML -->
+                <div class="card">
+                    <div class="card-badge">Data Science</div>
+                    <h3>Bank Campaign Prediction</h3>
+                    <p>XGBoost model predicting telemarketing success with 0.76 accuracy score on Kaggle using hyperparameter tuning & feature engineering.</p>
+                    <a href="#" class="card-link">View Repo <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="card empty-card"><i class="fas fa-code"></i><h3>Upcoming Project</h3></div>
+
+                <!-- Card 4: Digital Library Web App -->
+                <div class="card">
+                    <div class="card-badge">Full Stack</div>
+                    <h3>Digital Library System</h3>
+                    <p>Full-stack web application for automated resource tracking, user management, and catalog search.</p>
+                    <a href="#" class="card-link">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Placeholders for future projects -->
                 <div class="card empty-card"><i class="fas fa-code"></i><h3>Upcoming Project</h3></div>
                 <div class="card empty-card"><i class="fas fa-code"></i><h3>Upcoming Project</h3></div>
                 <div class="card empty-card"><i class="fas fa-code"></i><h3>Upcoming Project</h3></div>
@@ -99,11 +177,11 @@
                 </div>
             </div>
             <div class="iframe-wrapper">
-                <div class="iframe-loader">Loading content...</div>
+                <div class="iframe-loader">Loading embedded content...</div>
                 <iframe id="content-frame" src="https://poems.prashu.dev" frameborder="0" title="Creative Content"></iframe>
             </div>
             <div class="iframe-fallback">
-                <p>Having trouble viewing? <a id="external-link" href="https://poems.prashu.dev" target="_blank">Open in a new tab</a></p>
+                <p>Having trouble viewing? <a id="external-link" href="https://poems.prashu.dev" target="_blank">Open in new window</a></p>
             </div>
         </section>
 
@@ -111,7 +189,7 @@
         <section id="contact" class="section">
             <div class="section-header">
                 <h2>Get In <span class="highlight">Touch</span></h2>
-                <p>Have a project in mind or just want to say hi?</p>
+                <p>Have an idea or collaboration opportunity? Let's connect.</p>
             </div>
             <div class="contact-container">
                 <form id="contact-form" class="contact-form">
@@ -132,9 +210,8 @@
 
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Prashant. All rights reserved.</p>
+        <p>&copy; 2026 Prashant Priyadarshi. All rights reserved.</p>
         <div class="footer-links">
             <a href="#" id="privacy-link">Privacy Policy</a>
         </div>
@@ -146,8 +223,7 @@
             <span class="close-modal">&times;</span>
             <h2>Privacy Policy</h2>
             <p><strong>Last Updated: July 2026</strong></p>
-            <p>This portfolio website does not actively track your personal data. Any information submitted via the contact form is used strictly for communication purposes and is never shared with third parties.</p>
-            <p>Embedded content (like YouTube videos or sub-domains) may behave in the exact same way as if the visitor has visited the other website, which may collect data, use cookies, or embed additional third-party tracking.</p>
+            <p>This personal portfolio does not harvest or track user identity data. Any message submitted via the contact form is processed strictly for communication.</p>
         </div>
     </div>
 
