@@ -446,3 +446,10 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.hero-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
